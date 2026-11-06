@@ -148,6 +148,44 @@
   .row .ko{font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif}
   .copy{margin-top:6px;font-size:12px;font-weight:700;color:var(--navy);background:#fff;border:0;border-radius:999px;padding:5px 12px;cursor:pointer;font-family:inherit}
 
+  /* ===== Gia hạn SIM ===== */
+  #giahansim{scroll-margin-top:14px}
+  .sim-hero{position:relative;overflow:hidden;border-radius:var(--radius);padding:18px;color:#fff;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%)}
+  .sim-hero::after{content:"";position:absolute;right:-36px;top:-36px;width:120px;height:120px;border-radius:50%;border:16px solid rgba(232,23,15,.55)}
+  .sim-hero small{position:relative;display:block;font-size:12px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:#C9D6F2}
+  .sim-hero strong{position:relative;display:block;margin-top:4px;font-size:21px;font-weight:900;line-height:1.25}
+  .sim-hero p{position:relative;margin-top:6px;font-size:14px;color:#E4EBFA}
+  .sim-hero p b{color:#FFD84D}
+  .sim-sub{margin:18px 0 10px;font-size:14.5px;font-weight:800;color:var(--navy)}
+  .plans{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px}
+  .plan-top{display:flex;align-items:center;gap:10px}
+  .plan-no{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-weight:800;font-size:15px}
+  .plan-price{flex:1;min-width:0}
+  .plan-price s{display:block;font-size:12px;color:var(--muted);line-height:1.3}
+  .plan-price b{display:block;font-size:22px;font-weight:900;color:var(--red);line-height:1.15}
+  .plan-net{flex:none;padding:3px 9px;border-radius:8px;background:#E6F0FF;color:var(--blue);font-size:12.5px;font-weight:800}
+  .plan-net.g5{background:#FFE9EA;color:var(--red)}
+  .plan ul{list-style:none;margin-top:10px;padding-top:9px;border-top:1px dashed var(--line);font-size:13px}
+  .plan li{display:flex;justify-content:space-between;gap:12px;padding:2px 0}
+  .plan li span{flex:none;color:var(--muted)}
+  .plan li b{min-width:0;text-align:right;font-weight:700}
+  .sim-notes{margin-top:12px;background:#FFF4F3;border:1px solid #FFD5D2;border-radius:16px;padding:12px 14px;font-size:13.5px}
+  .sim-notes b.t{display:block;color:var(--red);font-weight:800;margin-bottom:4px}
+  .sim-notes li{list-style:none;padding:3px 0}
+  .sim-notes em{font-style:normal;font-weight:800;color:var(--red)}
+  .gifts{display:flex;flex-wrap:wrap;gap:7px;list-style:none}
+  .gifts li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 11px;font-size:13px;font-weight:600}
+  .gifts li.cash{background:var(--navy);border-color:var(--navy);color:#fff}
+  .sim-promo{margin-top:12px}
+  .sim-cta{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:14px}
+  .sim-cta a{display:block;padding:13px 8px;border-radius:14px;text-align:center;font-size:14.5px;font-weight:800;color:#fff}
+  .sim-cta .c-zalo{background:#0068FF}
+  .sim-cta .c-call{background:var(--red)}
+  .posters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+  .posters button{border:1px solid var(--line);padding:0;background:#fff;cursor:zoom-in;border-radius:14px;overflow:hidden;display:block}
+  .posters img{width:100%;height:auto}
+
   .gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .gallery button{border:0;padding:0;background:none;cursor:zoom-in;border-radius:14px;overflow:hidden;display:block}
   .gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1;transition:transform .3s}
@@ -213,6 +251,14 @@
       <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
     </a>
 
+    <!-- GIA HẠN SIM: cuộn xuống phần #giahansim -->
+    <a class="cta" href="#giahansim">
+      <span class="badge">Rinh quà</span>
+      <span class="ic call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><rect x="8" y="10" width="8" height="8" rx="1"/><path d="M12 10v8M8 14h8"/></svg></span>
+      <span class="txt"><b>Gia hạn SIM</b><small>KT từ 15.950₩ · nhận quà tặng</small></span>
+      <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+    </a>
+
     <a class="cta" href="tel:+821081872668">
       <span class="ic call"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span>
       <span class="txt"><b>Gọi: 010-8187-2668</b><small>Gọi / nhắn tin · tư vấn 11:00 – 21:00</small></span>
@@ -237,6 +283,74 @@
       <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
     </a>
   </nav>
+
+  <!-- ===== Gia hạn SIM (giá và quà lấy từ 2 poster media/sim-plans.webp, media/sim-gifts.webp) ===== -->
+  <section class="reveal" id="giahansim">
+    <h2 class="h2">Gia hạn SIM</h2>
+    <div class="sim-hero">
+      <small>Lên chính chủ SIM · Gia hạn gói cước</small>
+      <strong>Rinh ngay quà tặng</strong>
+      <p>Gói cước KT 5G giá tốt, <b>giảm còn từ 15.950₩</b></p>
+    </div>
+
+    <h3 class="sim-sub">Gói cước KT siêu khuyến mại</h3>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-top"><span class="plan-no">1</span><div class="plan-price"><s>Giá gốc 39.000₩</s><b>15.950₩</b></div><span class="plan-net">3G</span></div>
+        <ul><li><span>Gọi di động</span><b>200 phút</b></li><li><span>Nhắn tin</span><b>200 SMS</b></li><li><span>Mạng</span><b>1GB tốc độ cao + 1Mbps không giới hạn</b></li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><span class="plan-no">2</span><div class="plan-price"><s>Giá gốc 49.000₩</s><b>23.450₩</b></div><span class="plan-net">4G</span></div>
+        <ul><li><span>Gọi di động</span><b>200 phút</b></li><li><span>Nhắn tin</span><b>200 SMS</b></li><li><span>Mạng</span><b>3G tốc độ cao + 3Mbps không giới hạn</b></li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><span class="plan-no">3</span><div class="plan-price"><s>Giá gốc 59.000₩</s><b>28.750₩</b></div><span class="plan-net g5">5G</span></div>
+        <ul><li><span>Gọi di động</span><b>Không giới hạn</b></li><li><span>Nhắn tin SMS</span><b>Không giới hạn</b></li><li><span>Mạng</span><b>5G tốc độ cao + 5Mbps không giới hạn</b></li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><span class="plan-no">4</span><div class="plan-price"><s>Giá gốc 69.000₩</s><b>36.250₩</b></div><span class="plan-net g5">5G</span></div>
+        <ul><li><span>Gọi di động</span><b>Không giới hạn</b></li><li><span>Nhắn tin SMS</span><b>Không giới hạn</b></li><li><span>Mạng</span><b>110GB tốc độ cao + 5Mbps không giới hạn</b></li></ul>
+      </div>
+      <div class="plan">
+        <div class="plan-top"><span class="plan-no">5</span><div class="plan-price"><s>Giá gốc 90.000₩</s><b>46.500₩</b></div><span class="plan-net g5">5G</span></div>
+        <ul><li><span>Gọi di động</span><b>Không giới hạn</b></li><li><span>Nhắn tin SMS</span><b>Không giới hạn</b></li><li><span>Mạng</span><b>Tốc độ cao không giới hạn</b></li></ul>
+      </div>
+    </div>
+
+    <div class="sim-notes">
+      <b class="t">Lưu ý</b>
+      <ul>
+        <li>Phí SIM <em>7.700₩</em> trừ tháng đầu tiên.</li>
+        <li>Hợp đồng <em>1 năm</em>. Đổi, huỷ, cắt SIM trước hạn sẽ bị phạt.</li>
+        <li>Sau 1 năm phải <em>gia hạn cước</em> tiếp để được hưởng khuyến mại.</li>
+      </ul>
+    </div>
+
+    <h3 class="sim-sub">Quà tặng khi lên chính chủ &amp; gia hạn</h3>
+    <ul class="gifts">
+      <li class="cash">Tiền mặt 50K ~ 80K ~ 100K</li>
+      <li>Nồi chiên</li><li>Nồi cơm điện</li><li>Máy sưởi</li><li>Chăn điện</li><li>Quạt cầm tay</li><li>Máy làm sữa đậu</li><li>Ấm siêu tốc</li><li>Nồi nướng lẩu</li><li>Máy massage</li><li>Máy hút bụi</li><li>Tai nghe AirPods</li><li>Tai nghe Max</li><li>Sạc dự phòng</li><li>Loa Bluetooth</li>
+    </ul>
+
+    <ul class="promo sim-promo">
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Bảo hành SIM, hỗ trợ <em>kiểm tra SIM free</em></span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Dịch vụ hỗ trợ free, uy tín, bảo mật 100%</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Nhận quà đều đặn theo đợt <em>6 – 8 tháng/lần</em></span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Vui lòng liên hệ khi muốn đổi, huỷ SIM và gói cước để tránh bị phạt</span></li>
+      <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><span>Lắp WiFi toàn Korea <em>tặng 6 tháng cước mạng</em> (135K ~ 360K) sau khi lắp</span></li>
+    </ul>
+
+    <div class="sim-cta">
+      <a class="c-zalo" href="https://zaloapp.com/qr/p/fxbf7w9ybm7s" target="_blank" rel="noopener" data-qr="media/zalo-qr.webp" data-cap="Quét mã QR bằng Zalo trên điện thoại để nhắn Đức Bờm">Nhắn Zalo gia hạn</a>
+      <a class="c-call" href="tel:+821081872668">Gọi 010-8187-2668</a>
+    </div>
+
+    <h3 class="sim-sub">Xem poster đầy đủ</h3>
+    <div class="posters">
+      <button type="button" data-zoom="media/sim-plans.webp"><img src="media/sim-plans.webp" alt="Poster gói cước KT 5G siêu khuyến mại" width="853" height="1280" loading="lazy"></button>
+      <button type="button" data-zoom="media/sim-gifts.webp"><img src="media/sim-gifts.webp" alt="Poster lên chính chủ SIM, gia hạn gói cước nhận quà tặng" width="854" height="1280" loading="lazy"></button>
+    </div>
+  </section>
 
   <!-- ===== Dịch vụ ===== -->
   <section class="reveal">
@@ -351,13 +465,14 @@
     });
   });
   // Zalo: điện thoại mở thẳng app Zalo; máy tính hiện mã QR để quét
-  var zb=document.getElementById('zaloBtn');
   var isPhone=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.maxTouchPoints>1&&/Macintosh/.test(navigator.userAgent));
-  if(zb&&!isPhone){
-    zb.addEventListener('click',function(e){
-      e.preventDefault();
-      mImg.src=zb.dataset.qr; mImg.alt=zb.dataset.cap; mCap.textContent=zb.dataset.cap;
-      modal.classList.add('open');
+  if(!isPhone){
+    document.querySelectorAll('[data-qr]').forEach(function(zb){
+      zb.addEventListener('click',function(e){
+        e.preventDefault();
+        mImg.src=zb.dataset.qr; mImg.alt=zb.dataset.cap; mCap.textContent=zb.dataset.cap;
+        modal.classList.add('open');
+      });
     });
   }
   modal.addEventListener('click',function(e){ if(e.target!==mImg) modal.classList.remove('open'); });
