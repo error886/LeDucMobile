@@ -1,0 +1,10 @@
+# Ảnh gốc (không cần cho website, đã có bản tối ưu trong media/)
+/*.jpg
+/*.JPG
+# Cấu hình cục bộ
+.claude/
+Thumbs.db
+.DS_Store
+
+# Ảnh cũ của Xi Trum, không dùng cho Lê Đức
+assets/
